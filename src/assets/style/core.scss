@@ -1,0 +1,66 @@
+.ruler-container {
+  width: 100%;
+  .notes {
+    list-style: none;
+    width: fit-content;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .n-container {
+    width: 4em;
+    height: 4em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: #999999;
+    margin: 0.5em;
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 0px solid #000000;
+
+  }
+
+  .n-names {
+    width: 4em;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .ruler {
+    width: 60em;
+    height: 5em;
+    position: absolute;
+    // background: rgba(0.2, 0.2, 0.2, 0.8);
+    cursor: all-scroll;
+    display: flex;
+    flex-direction: row;
+    .filled {
+      width: 5em;
+      height: 5em;
+      background: rgb(66, 66, 66);
+      position: absolute;
+      // outline: 0.0em solid rgb(66, 66, 66);
+      // outline-offset: -0.0em;
+    }
+    .empty {
+      width: 3.5em;
+      height: 3.5em;
+      background:rgba(0, 0, 0, 0);
+      position: absolute;
+      outline: 0.5em solid rgb(66, 66, 66);
+      outline-offset: -0.5em;
+      border-radius: 25px 25px 25px 25px;
+      -moz-border-radius: 25px 25px 25px 25px;
+      -webkit-border-radius: 25px 25px 25px 25px;
+      border: 0px solid rgb(66, 66, 66);
+      border-width: 0.75em;
+    }
+
+  }
+
+}
